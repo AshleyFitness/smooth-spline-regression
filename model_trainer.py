@@ -109,10 +109,6 @@ class ModelTrainer:
     def predict(self,x :np.ndarray,BETA:np.ndarray):
         transformed_x = self.b(x)
         return transformed_x@BETA
-    def classify(self,x:np.ndarray,BETA:np.ndarray):
-        prediction = self.predict(x,BETA)
-        return 1/(1 + np.exp(-prediction)  )
-
     def save_model(self):
         os.makedirs("model",exist_ok=True)
         np.save("model/B.npy",self.B)
@@ -137,4 +133,5 @@ class ModelTrainer:
             SCORE.append(np.sum( ((self.y - g_lambda) / (1-diag_S_lambda))**2 ))
         best_lambda = lambdas[np.argmin(SCORE)]
         best_BETA = self.BETA(best_lambda)
+
         return (best_BETA,best_lambda)
