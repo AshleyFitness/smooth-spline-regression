@@ -22,7 +22,7 @@ However, the **core idea is really really interesting**. If you are seeking a mo
 
 One common solution is to introduce new transformed terms, expressing $y$ as a **polynomial expression**:
 $$y_i = \beta_0 + \beta_1 x_i + \beta_2 x_i^2 + \epsilon_i$$
-The issue with **polynomials** is their excessive "flexibility." A polynomial that fits well in the center of the data can quickly **"drift away"** from the reality as we further and further from the center.
+The issue with **polynomials** is their excessive "flexibility." A polynomial that fits well in the center of the data can quickly **"drift away"** from the reality as we move further and further from the center.
 
 ![Polynomial fit](images/polynomial_over_complex_fn.png)
 *(As we can see on the left side, the model will go to a completly opposite direction compared to the real function. If the relation was linear the errors would have been smaller for that side of the dataset)*
@@ -199,3 +199,4 @@ The mathematical foundations for this explanation were primarily based on these 
 * The book: *An Introduction to Statistical Learning*.
 
 The code and initial mathematical calculations were **completely written by me**. Due to my struggles with grammar, I relied on AI for corrections and converting the text into a clean LaTeX-friendly format.
+
