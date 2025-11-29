@@ -102,6 +102,7 @@ However, $S_\lambda$ has another purpose:
 $$
 S_\lambda : \mathbb{R}^n \to \mathbb{R}^n, \quad S_\lambda y = \hat{y}
 $$
+
 At first sight, it might seems like a complete non-sense, why would we want to predict something that is already an result ? 
 But it's purposes actually resides in it's training because it measures how much the model "influences" $y$. how much each $y_j$ contributes to producing $\hat{y}_j$.
 
@@ -199,6 +200,7 @@ The mathematical foundations for this explanation were primarily based on these 
 * The book: *An Introduction to Statistical Learning*.
 
 The code and initial mathematical calculations were **completely written by me**. Due to my struggles with grammar, I relied on AI for corrections and converting the text into a clean LaTeX-friendly format.
+
 
 
 
