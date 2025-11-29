@@ -48,7 +48,7 @@ This "natural" aspect is achieved by imposing **continuity constraints** not onl
 Splines offer superior **flexibility** and **stability** compared to a single high-degree polynomial:
 
 1.  **Local Adaptability:** They can be adjusted to be almost **linear at the extrema** (adding stability) while remaining **flexible** and adaptable in high-variance regions where most data is concentrated.
-2.  **Handling Different Relations:** Splines can effectively model multiple underlying relationships within a single training dataset. For example, a dataset might exhibit an **exponential relation** over $[0; 50]$ and just after a **logarithmic relation** over $[50; \infty]$. A single high-degree polynomial would be completly off because the real relation is much more complex, and using two separate equations would break the **continuity** and **natural evolution** between the two parts. Splines, by design, resolve this.
+2.  **Handling Different Relations:** Splines can effectively model multiple underlying relationships within a single training dataset. For example, a dataset might exhibit an **exponential relation** over $[0; 50]$ and just after a **logarithmic relation** over $[50; \infty[$. A single high-degree polynomial would be completly off because the real relation is much more complex, and using two separate equations would break the **continuity** and **natural evolution** between the two parts. Splines, by design, resolve this.
 
 ### The Approximation Power
 
@@ -199,4 +199,5 @@ The mathematical foundations for this explanation were primarily based on these 
 * The book: *An Introduction to Statistical Learning*.
 
 The code and initial mathematical calculations were **completely written by me**. Due to my struggles with grammar, I relied on AI for corrections and converting the text into a clean LaTeX-friendly format.
+
 
